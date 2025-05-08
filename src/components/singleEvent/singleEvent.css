@@ -1,0 +1,65 @@
+.event {
+    display: flex;
+    width: 90%;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+.event__date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: var(--color-text);
+    width: 66px;
+    height: 66px;
+    border: 1px solid var(--color-text);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.event__day {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.event__month {
+    font-size: 10px;
+}
+
+.event__details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 66px;
+    width: 220px;
+    margin-left: 20px;
+    border-bottom: 1px solid white;
+}
+
+.event__act {
+    font-family: 'fira sans', sans-serif;
+    color: var(--color-text);
+    font-size: 22px;
+}
+
+.event__venue {
+    color: var(--color-text);
+    font-style: italic;
+    font-size: 12px;
+}
+
+.event__time {
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+.event__cost {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--color-secondary);
+    font-size: 17px;
+    font-weight: 500;
+}
