@@ -20,13 +20,13 @@ Använt för att skapa global statehantering. Underlättade bygget av applikatio
 Används för att förenkla hämtandet av eventdata från ett externt API.
 
 ### FontAwesome
-Ett ikonbibliotek som användes för att hämta förstorningsglaset till sökfunktionen.
+FontAwesome tillhandahåller ett stort bibliotek av SVG- och webfonter som enkelt integreras med React-komponenter via @fortawesome/react-fontawesome. Ikoner renderas som <svg>-element, vilket gör dem skalbara och stilbara med CSS. Jag använde biblioteket för att hämta förstorningsglaset till sökfunktionen. Jag började titta på att använda biblioteket för att animera vissa delar av logotypen, men upptäckte att det kostade mer än det smakade. Bra att veta dock, vad man kan använda biblioteket till. Verkar mycket kraftfullt.
 
 ### Swiper
-Användes för att göra biljetterna svepbara.
+Användes för att göra biljetterna svepbara. Jag letade upp ett exempel på hur biblioteket används och gjorde likadant, men med vissa justeringar. 
 
 ### React Barcode
-Används för att generera streckkoder av de slumpade biljettkoderna. Jag är medveten om att det teoretiskt sätt skulle kunna slumpas fram samma biljettnummer. För att säkra hade jag kunnat lagra de slumpade biljettkoderna i en lista och jämföra varje nytt nummer mot den. Något att ta ställning till i ett skarpt projekt tänker jag.
+Används för att generera streckkoder av de slumpade biljettkoderna. Eftersom komponenten fanns och var väldigt lätt att använda passade det att använda den i projektet. Jag är medveten om att det teoretiskt sätt skulle kunna slumpas fram samma biljettnummer. För att säkra hade jag kunnat lagra de slumpade biljettkoderna i en lista och jämföra varje nytt nummer mot den. Något att ta ställning till i ett skarpt projekt tänker jag.
 
 ### UUID
-Används för att generera unika ID:n till varje order och biljett.
+Används för att generera unika ID:n till varje order och biljett. Används för att generera unika id för varje order. Långa koder med mycket hög entropi. Som jag förstår det finns det ingen databas som lagrar använda koder, men längden på koderna gör risken för upprepning i princip obefintlig. Säkerställer att ordrarna skiljs från varandra. Man ska exempelvis kunna lägga flera oberoende ordrar på samma event.
